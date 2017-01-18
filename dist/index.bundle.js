@@ -51,23 +51,34 @@
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {
 
+	"use strict";
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(33);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 	/**
 	 * Created by jtraver on 1/18/17.
 	 */
-	const React = __webpack_require__(2);
-	const ReactDOM = __webpack_require__(33);
-	const HelloWorld = React.createClass({
-	  displayName: 'HelloWorld',
+	var HelloWorld = _react2.default.createClass({
+	  displayName: "HelloWorld",
 
-	  render: function () {
-	    return React.createElement(
-	      'div',
+	  render: function render() {
+	    return _react2.default.createElement(
+	      "div",
 	      null,
-	      'Hello World!'
+	      "Hello World!"
 	    );
 	  }
 	});
-	ReactDOM.render(React.createElement(HelloWorld, null), document.getElementById('app'));
+
+	_reactDom2.default.render(_react2.default.createElement(HelloWorld, null), document.getElementById('app'));
 
 /***/ },
 /* 2 */
