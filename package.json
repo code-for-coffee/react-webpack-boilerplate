@@ -1,0 +1,22 @@
+{
+  "name": "react-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava 'app/**/*.test.js' --verbose --require ./other/setup-ava-tests.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-react": "^6.16.0",
+    "html-webpack-plugin": "^2.26.0",
+    "webpack": "^1.14.0"
+  },
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
+}
