@@ -78,7 +78,21 @@
 	  }
 	});
 
-	_reactDom2.default.render(_react2.default.createElement(HelloWorld, null), document.getElementById('app'));
+	var HelloUser = _react2.default.createClass({
+	  displayName: "HelloUser",
+
+	  render: function render() {
+	    return _react2.default.createElement(
+	      "div",
+	      null,
+	      "Hello, ",
+	      this.props.name
+	    );
+	  }
+	});
+
+	//ReactDOM.render(<HelloWorld />, document.getElementById('app'));
+	_reactDom2.default.render(_react2.default.createElement(HelloUser, { name: "James" }), document.getElementById('app'));
 
 /***/ },
 /* 2 */

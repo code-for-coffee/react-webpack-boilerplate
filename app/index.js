@@ -14,4 +14,13 @@ const HelloWorld = React.createClass({
   }
 });
 
-ReactDOM.render(<HelloWorld />, document.getElementById('app'));
+const HelloUser = React.createClass({
+  render: function () {
+    return (
+      <div>Hello, {this.props.name}</div>
+    )
+  }
+});
+
+//ReactDOM.render(<HelloWorld />, document.getElementById('app'));
+ReactDOM.render(<HelloUser name="James"/>, document.getElementById('app'));
